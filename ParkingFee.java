@@ -13,7 +13,6 @@ public class ParkingFee {
             if (jenis == 1 || jenis == 2) {
                 System.out.print("Enter parking duration (hours): ");
                 durasi = input.nextInt();
-
                 if (durasi > 5) {
                     total += 12500;
                 } else if (jenis == 1) { 
