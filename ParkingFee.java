@@ -7,11 +7,11 @@ public class ParkingFee {
         int total = 0;
 
         do {
-            System.out.print("Masukkan jenis kendaraan (1 Mobil, 2 Motor, 0 Keluar): ");
+            System.out.print("Enter the type of vehicle (1 Car, 2 Motorcycle, 0 Exit): ");
             jenis = input.nextInt();
 
             if (jenis == 1 || jenis == 2) {
-                System.out.print("Masukkan durasi parkir (jam): ");
+                System.out.print("Enter parking duration (hours): ");
                 durasi = input.nextInt();
 
                 if (durasi > 5) {
@@ -24,7 +24,7 @@ public class ParkingFee {
             }
         } while (jenis != 0);
 
-        System.out.println("Total biaya parkir: Rp " + total);
+        System.out.println("Total parking fee: Rp. " + total);
         input.close();
     }
 }
